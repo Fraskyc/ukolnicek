@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Správce úkolů</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Správce úkolů</h1>
+  <div class="container">
+    <div class="category">
+      <h2>Práce</h2>
+      <div class="input-group">
+        <input type="text" id="workInput" placeholder="Přidat úkol...">
+        <button onclick="addTask('work')">Přidat</button>
+      </div>
+      <ul class="task-list" id="workTasks"></ul>
+    </div>
+    <div class="category">
+      <h2>Domácnost</h2>
+      <div class="input-group">
+        <input type="text" id="homeInput" placeholder="Přidat úkol...">
+        <button onclick="addTask('home')">Přidat</button>
+      </div>
+      <ul class="task-list" id="homeTasks"></ul>
+    </div>
+    <div class="category">
+      <h2>Ostatní</h2>
+      <div class="input-group">
+        <input type="text" id="otherInput" placeholder="Přidat úkol...">
+        <button onclick="addTask('other')">Přidat</button>
+      </div>
+      <ul class="task-list" id="otherTasks"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
